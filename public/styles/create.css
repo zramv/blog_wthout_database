@@ -1,0 +1,125 @@
+
+.arrow1{
+margin-top: 50px;
+margin-left: 20px;
+height: 20px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+
+.div-h1{
+margin-top: 100px;
+color: #EBEEF5;
+width: 350px;
+text-align: center;
+text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.18) ;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 75px 225px 40px;
+    row-gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.input{
+    padding: 10px;
+    color: #EBEEF5;
+    background-color:#1d1d1d;
+    border: none;
+    box-shadow: -1px -1px 1px #EBEEF560 inset;
+    border-top: 5px solid #0a0a0a60 ;
+    border-left: 5px solid #0a0a0a60 ;
+}
+.input1{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.input2{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    
+}
+.submit{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #EBEEF5;
+    border: none;
+    font-weight: bold;
+}
+
+
+.button{
+    border-radius: 10px;
+    background-color: #EBEEF5;
+    border: none;
+    font-weight: bold;
+}
+.button:hover{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(57, 36, 36, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    color:#EBEEF5 ;
+}
+
+
+
+
+
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(57, 36, 36, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    
+}
+@media(max-width:500px){
+    .div-h1{
+        margin-top: 50px;
+    }
+    .form{
+        margin-top: 50px; 
+        grid-template-rows: 75px 150px 0.2fr;
+        gap: 10px;
+    }
+    .input1{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+       height: 100%;
+       grid-column-start: 1;
+       grid-column-end: 7;
+    }
+    .input2{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    
+
+    
+}
